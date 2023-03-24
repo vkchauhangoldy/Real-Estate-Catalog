@@ -1,0 +1,94 @@
+.add-form {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 4rem;
+}
+
+.form-controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.form-control label {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.form-control input,
+.form-control select {
+  outline: none;
+  padding: 1.2rem 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.form-control input:focus,
+.form-control select:focus {
+  border: 1px solid #6ab3eb;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.cancel-btn {
+  background-color: #6ab3eb;
+  border: 1px solid #6ab3eb;
+  padding: 1.7rem 6rem;
+  color: #fff;
+}
+.cancel-btn:hover,
+.cancel-btn:active {
+  background-color: #5fa1d4;
+  border: 1px solid #5fa1d4;
+  color: #fff;
+}
+
+.previous-btn {
+  background-color: #6ab3eb;
+  border: 1px solid #6ab3eb;
+  padding: 1.7rem 6rem;
+  color: #fff;
+}
+.previous-btn:hover,
+.previous-btn:active {
+  background-color: #5fa1d4;
+  border: 1px solid #5fa1d4;
+  color: #fff;
+}
+
+.save-btn {
+  background-color: #6741d9;
+  border: 1px solid #6741d9;
+  color: #fff;
+}
+.save-btn:hover,
+.save-btn:active {
+  background-color: #5d3bc3;
+  border: 1px solid #5d3bc3;
+  color: #fff;
+}
+
+.add-btn {
+  background-color: #6741d9;
+  border: 1px solid #6741d9;
+  color: #fff;
+}
+.add-btn:hover,
+.add-btn:active {
+  background-color: #5d3bc3;
+  border: 1px solid #5d3bc3;
+  color: #fff;
+}
