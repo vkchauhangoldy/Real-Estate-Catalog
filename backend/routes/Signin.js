@@ -27,7 +27,7 @@ router.post('/signin', async (req, res) => {
         }
         else {
             //matching password
-            const matchPass = await bcrypt.compare(password, userValid.password)
+            const matchPass = bcrypt.compare(password, userValid.password)
             if (!matchPass) {
                 res.status(400).json({
                     status: "failed",
@@ -36,7 +36,7 @@ router.post('/signin', async (req, res) => {
             } else {
                 const token = jwt.sign({ id: userValid._id, email: userValid.email }, SECRET_KEY)
                 res.status(400).json({
-                    status: "failed",
+                    status: "success",
                     message: "user logged in successfully!",
                     token, id: userValid._id
                 })

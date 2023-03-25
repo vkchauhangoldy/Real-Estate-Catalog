@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
-
-
-
 // const db_url = process.env.DATABASE_URI;
-const db_url = "mongodb+srv://vkchauhangoldy:vkchauhangoldy@realestate.n3kd9bc.mongodb.net/Real-Estate-Catalog?retryWrites=true&w=majority";
+const db_url = "mongodb+srv://vkchauhangoldy:vkchauhangoldy@realestate.n3kd9bc.mongodb.net/Real-Estate?retryWrites=true&w=majority";
 
 
 mongoose.set('strictQuery', false);
